@@ -17,6 +17,13 @@ var dynamic_load = function()
     EleContractsTop = $("#contracts").offset().top;
     EleTeamTop = $("#team").offset().top;
     EleAboutTop=$("#about").offset().top;
+    if (scrollTop>100)
+    {
+        $("#toTop").css("opacity",1);
+    }
+    else {
+        $("#toTop").css("opacity",scrollTop/100);
+    }
     if (!isLoadProducts)
     {
 
@@ -104,4 +111,11 @@ var dynamic_load = function()
 $(window).scroll(function(){
     dynamic_load();
 });
-dynamic_load();
+
+$(window).load(function() {
+    var clientHeight=document.body.clientHeight||document.documentElement.clientHeight;
+    $("#home").css({
+        background: "url('images/home_bg.jpg') no-repeat 0px -165px",
+        height:clientHeight+30
+    });
+});

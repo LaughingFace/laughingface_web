@@ -46,6 +46,8 @@ a{
 .home_block{
 	width:100%;
 	text-align:center;
+
+
 }
 
 .home_block .logo{
@@ -58,13 +60,54 @@ a{
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2em;
-    margin: 0;
+    margin: 1.5em 0;
 }
 .home_block .home_text2{
 	margin: 2em 0 4em;
     font-size: 22px;
     color: #fff;
 }
+.more{
+    margin-bottom: 1.5em;
+}
+.fig:hover {
+    transform: rotateY(360deg);
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+
+}
+
+/*-- to-top --*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arrow.png") no-repeat 0px 0px;
+}
+
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*-- //to-top --*/
 /*icon-nav*/
 .td_nav{
 	padding:4em 0;
@@ -108,7 +151,10 @@ a{
     text-align: left;
 }
 
-
+.show_more{
+    width:180px;
+    height:49px;
+}
 
 .group-text p {
     color: #ededed;

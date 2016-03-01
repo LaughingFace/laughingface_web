@@ -4,19 +4,13 @@
 	<title></title>
 	
 	<link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/jquery.scrollLoading.js"></script>
-    <script>
-        $(function () {
-            $(".scrollLoading").scrollLoading();
-        });
-    </script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	</head>
 	
 	<body>
 
 			<table  class="table_block">
-			<tr>
+			<tr id="top">
 				<td width="50%">
 					<a href="index.html"><img src="images/logo.png" style="padding:1em 0" alt=" "></a>
 				</td>
@@ -43,11 +37,11 @@
 				<div class="more">
 				  <div>
 					<a href="#about" class="scroll">
-				  <img src="images/more2.png"></a>
+				  <img class="show_more" src="images/more2.png"></a>
 				  </div>
 				  <div style=" margin-top: -49px;">
 					<a href="#about" class="scroll">
-					<img id="show_more" src="images/more1.png" style="opacity: 1; cursor: default;"></a></div>
+					<img id="show_more" class="show_more" src="images/more1.png" style="opacity: 1; cursor: default;"></a></div>
 					  </div>
 					  <script type="text/javascript">
                                 $(function () {
@@ -73,9 +67,9 @@
 	
 			<table class="table_block">
 			<tr>
-				<td class="td_nav"><a><img src="images/about.png" /></a><h3>关于我们</h3></td>
-				<td class="td_nav"width="33%"><a><img src="images/products.png"/><h3>产品展示</h3></a></td>
-				<td class="td_nav"width="33%"><a><img src="images/contracts.png"/><h3>联系方式</h3></a></td>
+				<td class="td_nav"><a href="#about"><img class="fig" src="images/about.png" /></a><h3>关于我们</h3></td>
+				<td class="td_nav"width="33%"><a href="#products"><img class="fig" src="images/products.png"/><h3>产品展示</h3></a></td>
+				<td class="td_nav"width="33%"><a href="#contracts"><img class="fig" src="images/contracts.png"/><h3>联系方式</h3></a></td>
 			</tr>
 			<tr>
 			<td colspan="3" class="wlecome_text"><p>"欢迎来到笑脸科技,<br>用想象力生活."</p></td>
@@ -183,7 +177,7 @@
         </div>
         <div class="postcard"><img id="dy_contracts_3" class="scrollLoading"  src="images/pixel.gif"></div></td></tr>
 			</table>
-	<div id="test" class="footer">
+	<div  class="footer">
    
          
                 <p>Copyright © 2016.Company name All rights reserved.<br>
@@ -192,10 +186,10 @@
             
     </div>
 </div>
-            <!--<script type="text/javascript" src="js/index.js"></script>-->
+            <a href="#top" id="toTop" style="display: inline;opacity:0"><span id="toTopHover" style="opacity: 1;"></span>To Top</a>
             <script type="text/javascript" src="js/dynamic.data.js"></script>
 <script type="text/javascript">
-$(function(){   
+$(function(){
     $('a[href*=#],area[href*=#]').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var $target = $(this.hash);
@@ -210,7 +204,10 @@ $(function(){
             }
         }
     });
-})
+});
+
+
+
 </script>
 
 	</body>
