@@ -1,0 +1,215 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	
+	<link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
+	 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	  <script src="js/jquery.scrollLoading.js"></script>
+    <script>
+        $(function () {
+            $(".scrollLoading").scrollLoading();
+        });
+    </script>
+	</head>
+	
+	<body>
+	
+			<table  class="table_block">
+			<tr>
+				<td width="50%">
+					<a href="index.html"><img src="images/logo.png" style="padding:1em 0" alt=" "></a>
+				</td>
+				<td>
+				<div class="top-nav">
+					<ul >
+						<li><a href="#home" >首页</a></li>
+						<li><a href="#about" >关于</a></li>
+						<li><a href="#products" >展示</a></li>
+						<li><a href="#contracts" >联系</a></li>
+					</ul>
+	
+					</div>
+				</td>
+			</tr>
+			</table>
+			<div>
+			<div id="home" class="home_block">
+	
+				<img class="logo" src="images/logoy.png"/>
+				<p class="home_text1">laughingface</p>
+				<p class="home_text2">用想象力生活</p>
+	
+				<div class="more">
+				  <div>
+					<a href="#about" class="scroll">
+				  <img src="images/more2.png"></a>
+				  </div>
+				  <div style=" margin-top: -49px;">
+					<a href="#about" class="scroll">
+					<img id="show_more" src="images/more1.png" style="opacity: 1; cursor: default;"></a></div>
+					  </div>
+					  <script type="text/javascript">
+                                $(function () {
+
+                                    var lmore2 = $("#show_more");
+
+                                    lmore2.hover(
+                                            function() {
+                                                lmore2.animate({opacity:"0"},600);
+                                                lmore2.css("cursor","pointer");
+                                            },
+                                            function () {
+                                                lmore2.animate({opacity:"1"},600);
+                                                lmore2.css("cursor","default");
+                                            });
+                                })
+                            </script>
+	
+	
+	
+			</div></div>
+			<!--<img src="images/home_bg.jpg" style="width:100%"/>-->
+	
+			<table class="table_block">
+			<tr>
+				<td class="td_nav"><a><img src="images/about.png" /></a><h3>关于我们</h3></td>
+				<td class="td_nav"width="33%"><a><img src="images/products.png"/><h3>产品展示</h3></a></td>
+				<td class="td_nav"width="33%"><a><img src="images/contracts.png"/><h3>联系方式</h3></a></td>
+			</tr>
+			<tr>
+			<td colspan="3" class="wlecome_text"><p>"欢迎来到笑脸科技,<br>用想象力生活."</p></td>
+			</tr>
+			<tr> <td colspan="3" id="products" class="product_list" ><img src="images/products_show.png"/></td></tr>
+			<tr><td colspan="3"  class="product1"><img class="scrollLoading" data-url="images/product1.jpg" src="images/pixel.gif"/></td></tr>
+			<tr><td id="about" colspan="3"  class="product_list"><img src="images/tuanduijieshao.png"/></td></tr>
+			<tr><td colspan="3" ><div class="group-text">
+            <h3> 笑脸团队</h3>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都市笑脸科技有限公司成立于2014年12月，致力于智能家电设备的硬件设计和研发。公司运有营管理人员及包括机械设计师、结构设计师、程序设计、UI设计师、电子工程师在内的完整的设计团队。能够完成独立研发和设计创新产品，整合了包括供应链、生产、组装等环节在内的产品生产资源。实现了产品市场化。
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸科技秉承以用户体验为核心，以绝对的设计创新为理念，开发市场上一些前所未见的家用电器新产品，填补创新家电行业的市场空白。并在此基础上，研究搭建智能家居生态圈，以硬件为主，打入物联网领域。笑脸科技对产品的研发设计做出了一系列详细规划，并已经成功研发设计出第一款产品“智能微洗机”。
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸坚信：优秀创新的精神才能创造出好的产品，而优秀卓绝的产品才能成就一个品牌。用产品说话才是笑脸实力的证明。
+            </p>
+        </div></td></tr>
+			<tr><td colspan="3" >
+			
+			<div class="container">
+        <div class="about-us">
+            <h3>管理团队</h3>
+        </div>
+       <div class="about-grids">
+            <div class="about-grid">
+                <a id="ceo-img"></a>
+
+                <div class="about-grid-john">
+                    <div class="john">
+                        <h4>叶爽</h4>
+                        <p>CEO</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <!-- <li><a href class="facebook"> </a></li> -->
+                            <li><a href="javascript:;" onclick="js_method()" class="twitter" id="ceo"> </a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="para">负责公司产品设计及产品规划，兼产品经理</p>
+
+                    <div class="hello">
+                        <a href="#"><img src="images/guanzhu.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-grid about-mid">
+                <!-- <img src="images/13.jpg" alt=" "/> -->
+                <a id="ooo-img"></a>
+
+                <div class="about-grid-john">
+                    <div class="john">
+                        <h4>陈建兵</h4>
+
+                        <p>项目经理</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <!-- <li><a href class="facebook"> </a></li> -->
+                            <li><a class="twitter" id="ooo" href="javascript:;" onclick="js_method()"> </a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="para">负责产品结构设计，及生产跟踪.&nbsp;</p>
+
+                    <div class="hello">
+                        <a href="#"><img src="images/guanzhu.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-grid">
+                <!-- <img src="images/11.jpg" alt=" "/> -->
+                <a id="cto-img"></a>
+
+                <div class="about-grid-john">
+                    <div class="john">
+                        <h4>邱文海</h4>
+
+                        <p>项目总监</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <!-- <li><a href class="facebook"> </a></li> -->
+                            <li><a href="javascript:;" onclick="js_method()" class="twitter" id="cto"> </a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="para">负责产品开发总体规划.<br>&nbsp;</p>
+
+                    <div class="hello">
+                        <a href="#"><img src="images/guanzhu.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+            
+        </div>
+    </div>
+			
+			
+			</td></tr>
+			<tr><td colspan="3" id="contracts" class="contract_info" ><img src="images/contract_show.png"/></td></tr>
+			<tr><td colspan="3" >
+			 <div class="location">
+          <iframe frameborder="0" scrolling="no" src="location.html" style="width: 100%;height: 100%;overflow: hidden；"></iframe>
+        </div>
+        <div class="postcard"><img class="scrollLoading" data-url="images/contract_person.jpg" src="images/pixel.gif"></div></td></tr>
+			</table>
+	<div class="footer">
+   
+         
+                <p>Copyright © 2016.Company name All rights reserved.<br>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15030491号-1</a>,成都市笑脸科技有限公司</p>
+           
+            
+    </div>
+</div><script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+$(function(){   
+    $('a[href*=#],area[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                1000);
+                return false;
+            }
+        }
+    });
+})
+</script>
+	</body>
+	</html>
