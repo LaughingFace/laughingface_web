@@ -1,12 +1,11 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title></title>
 	
 	<link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
-	 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	  <script src="js/jquery.scrollLoading.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.scrollLoading.js"></script>
     <script>
         $(function () {
             $(".scrollLoading").scrollLoading();
@@ -15,7 +14,7 @@
 	</head>
 	
 	<body>
-	
+
 			<table  class="table_block">
 			<tr>
 				<td width="50%">
@@ -81,9 +80,9 @@
 			<tr>
 			<td colspan="3" class="wlecome_text"><p>"欢迎来到笑脸科技,<br>用想象力生活."</p></td>
 			</tr>
-			<tr> <td colspan="3" id="products" class="product_list" ><img src="images/products_show.png"/></td></tr>
-			<tr><td colspan="3"  class="product1"><img class="scrollLoading" data-url="images/product1.jpg" src="images/pixel.gif"/></td></tr>
-			<tr><td id="about" colspan="3"  class="product_list"><img src="images/tuanduijieshao.png"/></td></tr>
+			<tr> <td colspan="3" id="products" class="product_list" ><img id="products_img1" src="images/pixel.gif"/></td></tr>
+			<tr><td colspan="3"  class="product1"><img class="scrollLoading" id="products_img2" src="images/pixel.gif"/></td></tr>
+			<tr><td id="about" colspan="3"  class="product_list"><img id="dy_about_1" src="images/pixel.gif"/></td></tr>
 			<tr><td colspan="3" ><div class="group-text">
             <h3> 笑脸团队</h3>
 
@@ -92,7 +91,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸坚信：优秀创新的精神才能创造出好的产品，而优秀卓绝的产品才能成就一个品牌。用产品说话才是笑脸实力的证明。
             </p>
         </div></td></tr>
-			<tr><td colspan="3" >
+			<tr id="team"><td colspan="3" >
 			
 			<div class="container">
         <div class="about-us">
@@ -177,14 +176,14 @@
 			
 			
 			</td></tr>
-			<tr><td colspan="3" id="contracts" class="contract_info" ><img src="images/contract_show.png"/></td></tr>
+			<tr id="contracts"><td colspan="3" class="contract_info" ><img id="dy_contracts_1"src="images/pixel.gif"/></td></tr>
 			<tr><td colspan="3" >
 			 <div class="location">
-          <iframe frameborder="0" scrolling="no" src="location.html" style="width: 100%;height: 100%;overflow: hidden；"></iframe>
+          <iframe id="dy_contracts_2" frameborder="0" scrolling="no" src="a.html" style="width: 100%;height: 100%;"></iframe>
         </div>
-        <div class="postcard"><img class="scrollLoading" data-url="images/contract_person.jpg" src="images/pixel.gif"></div></td></tr>
+        <div class="postcard"><img id="dy_contracts_3" class="scrollLoading"  src="images/pixel.gif"></div></td></tr>
 			</table>
-	<div class="footer">
+	<div id="test" class="footer">
    
          
                 <p>Copyright © 2016.Company name All rights reserved.<br>
@@ -192,7 +191,9 @@
            
             
     </div>
-</div><script type="text/javascript" src="js/index.js"></script>
+</div>
+            <!--<script type="text/javascript" src="js/index.js"></script>-->
+            <script type="text/javascript" src="js/dynamic.data.js"></script>
 <script type="text/javascript">
 $(function(){   
     $('a[href*=#],area[href*=#]').click(function() {
@@ -211,5 +212,6 @@ $(function(){
     });
 })
 </script>
+
 	</body>
 	</html>
