@@ -3,6 +3,7 @@ body{
 	 background-image: url("../images/background.jpg");
 	 margin:0;
 	 /*font-family: RTWSShangGoG0v1-ExLight, 'Open Sans', sans-serif;*/
+    font-family:YouYuan;
 }
 a{
  text-decoration: none;
@@ -46,8 +47,6 @@ a{
 .home_block{
 	width:100%;
 	text-align:center;
-
-
 }
 
 .home_block .logo{
