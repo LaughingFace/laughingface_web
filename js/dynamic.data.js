@@ -43,7 +43,7 @@ var dynamic_load = function()
             $("#dy_contracts_2").attr("src","location.html");
             $("#dy_contracts_3").attr("src","images/contract_person.jpg");
             isLoadContracts = true;
-            console.log("load");
+
         }
     }
     if (!isLoadAbout)
@@ -111,11 +111,38 @@ var dynamic_load = function()
 $(window).scroll(function(){
     dynamic_load();
 });
-
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i) ? true: false;
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i) ? true: false;
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true: false;
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) ? true: false;
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
 $(window).load(function() {
-    var clientHeight=document.body.clientHeight||document.documentElement.clientHeight;
-    $("#home").css({
-        background: "url('images/home_bg.jpg') no-repeat 0px -165px",
-        height:clientHeight+30
-    });
+
+    if (!isMobile.any()){
+        var clientHeight=document.body.clientHeight||document.documentElement.clientHeight;
+        $("#home").css({
+            background: "url('images/home_bg.jpg') no-repeat 0px -165px",
+            height:clientHeight+30
+        });
+    }
+    else{
+        $("#home").css({
+            background: "url('images/home_bg.jpg') no-repeat 0px -165px"
+
+        });
+    }
+
+
 });
