@@ -408,12 +408,12 @@ p.para {
 .location{
   width: 49%;
   height: 341px;
-  float:left;
+  float:right;
 }
 .postcard{
   width: 49%;
   height: 341px;
-  float:right;
+  float:left;
 }
 .postcard img{
   width:100%;

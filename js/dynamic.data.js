@@ -143,6 +143,7 @@ $(window).load(function() {
 
         });
     }
-
+    document.documentElement.scrollTop = 1;
+    document.body.scrollTop = 1;
 
 });
