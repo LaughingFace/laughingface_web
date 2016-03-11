@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pMITLr828whqtGyCO4anyZAm"></script>
+    <title>地图展示</title>
+</head>
+<body>
+<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+
+    var point = new BMap.Point(104.063065,30.556091);
+    map.centerAndZoom(point, 15);
+    var opts = {
+        position : new BMap.Point(104.062844,30.555935),    // 指定文本标注所在的地理位置
+        offset   : new BMap.Size(30, -30)    //设置文本偏移量
+    }
+    var label = new BMap.Label("复城国际T2-604:成都市笑脸科技", opts);  // 创建文本标注对象
+    label.setStyle({
+        color : "red",
+        fontSize : "12px",
+        height : "20px",
+        lineHeight : "20px",
+        fontFamily:"微软雅黑"
+    });
+    map.addOverlay(label);
+
+
+
+
+    var marker = new BMap.Marker(new BMap.Point(104.062844,30.555935));  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+</script>
