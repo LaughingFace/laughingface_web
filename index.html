@@ -1,220 +1,172 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
     <title>成都市笑脸科技有限公司</title>
-    <link rel="shortcut icon" href="images/laughingface_icon.ico" type="image/x-icon"/>
     <meta name="keywords" content="笑脸科技 微洗机 成都市笑脸科技有限公司 智能家居 创新产品 weixiji laughingface"/>
+    <link rel="shortcut icon" href="images/laughingface_icon.ico" type="image/x-icon" />
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <meta name="viewport" content="width=1170px, initial-scale=1">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <link href="css/index.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+        function hide_nav_menu(){
+            $("#nav-menu").attr("class","collapse navbar-collapse nav-float");
+        }
+    </script>
 </head>
-
 <body>
 
-<table class="table_block">
-    <tr id="top">
-        <td width="50%">
-            <a href="index.html"><img alt="笑脸科技logo" src="images/logo.png" style="padding:1em 0" alt=" "></a>
-        </td>
-        <td>
-            <div class="top-nav">
-                <ul>
-                    <li><a href="#home" onclick="javascript:alert('a')">首页</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#products">展示</a></li>
-                    <li><a href="#contracts">联系</a></li>
-                </ul>
 
-            </div>
-        </td>
-    </tr>
-</table>
-<div>
-    <div id="home" class="home_block">
-
-        <img alt="笑脸科技logo" class="logo" src="images/logoy.png"/>
-
-        <p class="home_text1">laughingface</p>
-
-        <p class="home_text2">用想象力生活</p>
-
-        <div class="more">
-            <div>
-                <a href="#about" class="scroll">
-                    <img class="show_more" src="images/more2.png"></a>
-            </div>
-            <div style=" margin-top: -49px;">
-                <a href="#about" class="scroll">
-                    <img id="show_more" class="show_more" src="images/more1.png"
-                         style="opacity: 1; cursor: default;"></a></div>
+<div  class="container">
+    <nav id="top" class="navbar " role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#nav-menu">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img alt="笑脸科技logo" src="images/logo.png" style="padding:1em 0"></a>
         </div>
+        <div class="collapse navbar-collapse nav-float" id="nav-menu">
+            <ul class="nav navbar-nav ">
 
+
+                <li><a  href="#home" onclick="javascript:hide_nav_menu();">首页</a></li>
+                <li class="active" onclick="javascript:hide_nav_menu();"><a href="#about">关于</a></li>
+                <li><a href="#products" onclick="javascript:hide_nav_menu();">展示</a></li>
+                <li><a href="#contracts" onclick="javascript:hide_nav_menu();">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- home   -->
+<div id="home" class="container-fluid " style="background: url('images/home_bg.jpg') 0px -165px no-repeat;">
+    <div class="row img-logo">
+        <img class="center-block img-responsive img-logo"alt="笑脸科技logo" class="logo" src="images/logoy.png">
+
+    </div>
+    <div class="row">
+        <p  class="home_text1">laughingface</p>
+    </div>
+    <div class="row">
+        <p class=" home_text2">用想象力生活</p>
+    </div>
+    <div class="row">
+        <div>
+            <a href="#about" class="scroll">
+                <img class="center-block img-responsive show_more" src="images/more2.png"></a>
+        </div>
+        <div style=" margin-top: -49px;">
+            <a href="#about" class="scroll">
+                <img id="show_more" class="center-block img-responsive show_more" src="images/more1.png" style="opacity: 1; cursor: default;"></a></div>
+    </div>
+    <div style="width:100%;height:100px"></div>
+</div>
+<!--pc nav-->
+<div class="container center-text visible-lg-block visible-md-block" style="margin-top:50px;">
+    <div class="row">
+        <div class="col-md-4 ">
+            <a href="#about"><img class="fig" src="images/about.png"></a><h3>关于我们</h3>
+        </div>
+        <div class="col-md-4">
+            <a href="#products"><img class="fig" src="images/products.png"></a><h3>产品展示</h3></a>
+        </div>
+        <div class="col-md-4">
+            <a href="#contracts"><img class="fig" src="images/contracts.png"></a><h3>联系方式</h3></a>
+        </div>
+    </div>
+</div>
+
+
+<div id="products" class="container">
+
+</div>
+<div class="container">
+    <div id="about" class="row nav-title">
+        <img id="dy_about_1" src="images/tuanduijieshao.png">
+    </div>
+    <div  class="row group-text">
+
+        <h3> 笑脸团队</h3>
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都市笑脸科技有限公司成立于2014年12月，致力于智能家电设备的硬件设计和研发。公司运有营管理人员及包括机械设计师、结构设计师、程序设计、UI设计师、电子工程师在内的完整的设计团队。能够完成独立研发和设计创新产品，整合了包括供应链、生产、组装等环节在内的产品生产资源。实现了产品市场化。
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸科技秉承以用户体验为核心，以绝对的设计创新为理念，开发市场上一些前所未见的家用电器新产品，填补创新家电行业的市场空白。并在此基础上，研究搭建智能家居生态圈，以硬件为主，打入物联网领域。笑脸科技对产品的研发设计做出了一系列详细规划，并已经成功研发设计出第一款产品“智能微洗机”。
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸科技坚信：优秀创新的精神才能创造出好的产品，而优秀卓绝的产品才能成就一个品牌。用产品说话才是笑脸科技实力的证明。
+        </p>
 
     </div>
 </div>
-<!--<img src="images/home_bg.jpg" style="width:100%"/>-->
-
-<table class="table_block">
-    <tr>
-        <td class="td_nav"><a href="#about"><img class="fig" src="images/about.png"/></a>
-
-            <h3>关于我们</h3></td>
-        <td class="td_nav" width="33%"><a href="#products"><img class="fig" src="images/products.png"/>
-
-            <h3>产品展示</h3></a></td>
-        <td class="td_nav" width="33%"><a href="#contracts"><img class="fig" src="images/contracts.png"/>
-
-            <h3>联系方式</h3></a></td>
-    </tr>
-    <tr>
-        <td colspan="3" class="wlecome_text"><p>"欢迎来到笑脸科技,<br>用想象力生活."</p></td>
-    </tr>
-    <tr>
-        <td colspan="3" id="products" class="product_list"><img id="products_img1" src="images/pixel.gif"/></td>
-    </tr>
-    <tr>
-        <td colspan="3" class="product1"><img class="scrollLoading" id="products_img2" src="images/pixel.gif"/></td>
-    </tr>
-    <tr>
-        <td id="about" colspan="3" class="product_list"><img id="dy_about_1" src="images/pixel.gif"/></td>
-    </tr>
-    <tr>
-        <td colspan="3">
-            <div class="group-text">
-                <h3> 笑脸团队</h3>
-
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都市笑脸科技有限公司成立于2014年12月，致力于智能家电设备的硬件设计和研发。公司运有营管理人员及包括机械设计师、结构设计师、程序设计、UI设计师、电子工程师在内的完整的设计团队。能够完成独立研发和设计创新产品，整合了包括供应链、生产、组装等环节在内的产品生产资源。实现了产品市场化。
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸科技秉承以用户体验为核心，以绝对的设计创新为理念，开发市场上一些前所未见的家用电器新产品，填补创新家电行业的市场空白。并在此基础上，研究搭建智能家居生态圈，以硬件为主，打入物联网领域。笑脸科技对产品的研发设计做出了一系列详细规划，并已经成功研发设计出第一款产品“智能微洗机”。
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;笑脸科技坚信：优秀创新的精神才能创造出好的产品，而优秀卓绝的产品才能成就一个品牌。用产品说话才是笑脸科技实力的证明。
-                </p>
-            </div>
-        </td>
-    </tr>
-    <tr id="team">
-        <td colspan="3">
-
-            <div class="container">
-                <div class="about-us">
-                    <h3>管理团队</h3>
-                </div>
-                <div class="about-grids">
-                    <div class="about-grid">
-                        <a id="ceo-img"></a>
-
-                        <div class="about-grid-john">
-                            <div class="john">
-                                <h4>叶爽</h4>
-
-                                <p>CEO</p>
-                            </div>
-                            <div class="social-icons">
-                                <ul>
-                                    <!-- <li><a href class="facebook"> </a></li> -->
-                                    <li><a href="javascript:;" onclick="js_method()" class="twitter" id="ceo"> </a></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="para">负责公司产品设计及产品规划，兼产品经理</p>
-
-                            <div class="hello">
-                                <a href="#"><img src="images/guanzhu.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-grid about-mid">
-                        <!-- <img src="images/13.jpg" alt=" "/> -->
-                        <a id="ooo-img"></a>
-
-                        <div class="about-grid-john">
-                            <div class="john">
-                                <h4>陈建兵</h4>
-
-                                <p>项目经理</p>
-                            </div>
-                            <div class="social-icons">
-                                <ul>
-                                    <!-- <li><a href class="facebook"> </a></li> -->
-                                    <li><a class="twitter" id="ooo" href="javascript:;" onclick="js_method()"> </a></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="para">负责产品结构设计，及生产跟踪.&nbsp;</p>
-
-                            <div class="hello">
-                                <a href="#"><img src="images/guanzhu.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-grid">
-                        <!-- <img src="images/11.jpg" alt=" "/> -->
-                        <a id="cto-img"></a>
-
-                        <div class="about-grid-john">
-                            <div class="john">
-                                <h4>邱文海</h4>
-
-                                <p>项目总监</p>
-                            </div>
-                            <div class="social-icons">
-                                <ul>
-                                    <!-- <li><a href class="facebook"> </a></li> -->
-                                    <li><a href="javascript:;" onclick="js_method()" class="twitter" id="cto"> </a></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p class="para">负责产品开发总体规划.<br>&nbsp;</p>
-
-                            <div class="hello">
-                                <a href="#"><img src="images/guanzhu.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-            </div>
-            </div>
-
-
-        </td>
-    </tr>
-    <tr id="contracts">
-        <td colspan="3" class="contract_info"><img id="dy_contracts_1" src="images/pixel.gif"/></td>
-    </tr>
-    <tr>
-        <td colspan="3">
-
-            <div class="postcard"><img alt="笑脸科技联系方式" id="dy_contracts_3" class="scrollLoading" src="images/pixel.gif">
-            </div>
-            <div class="location">
-                <iframe id="dy_contracts_2" frameborder="0" scrolling="no" src="a.html"
-                        style="width: 100%;height: 100%;"></iframe>
-            </div>
-        </td>
-    </tr>
-
-</table>
-<div class="footer">
-
-
-    <p>Copyright © 2016.Company name All rights reserved.<br>
-        <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15030491号-1</a>,成都市笑脸科技有限公司</p>
-
+<div id="team" class="container">
 
 </div>
+<div id="contracts" class="container">
+
 </div>
-
-
+<div class="copyright">
+    <div class="container">
+        <div class="row" style="text-align:center">
+            <span>Copyright © 2016.Company name All rights reserved.</span></br>
+            <span><a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15030491号-1</a>,成都市笑脸科技有限公司.</span>
+        </div>
+    </div>
+</div>
 <a href="#top" id="toTop" style="display: inline;opacity:0"><span id="toTopHover" style="opacity: 1;"></span>To Top</a>
-<link rel="stylesheet" href="fonts/YouYuan/YouYuan.css"/>
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/dynamic.data.js"></script>
-<script type="text/javascript">
+<script>
+
+
+    $(window).load(function() {
+
+        //alert(aaa.css("height"));
+        $("#team").load("ajax/team.html");
+        $("#products").load("ajax/products.html");
+        $("#contracts").load("ajax/contracts.html");
+
+    });
+    $(window).scroll(function(){
+        scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        if (scrollTop>100)
+        {
+            $("#toTop").css("opacity",1);
+        }
+        else {
+            $("#toTop").css("opacity",scrollTop/100);
+        }
+    });
     $(function () {
-        $('a[href*=#],area[href*=#]').click(function () {
+
+        var lmore2 = $("#show_more");
+
+        lmore2.hover(
+                function() {
+                    lmore2.animate({opacity:"0"},600);
+                    lmore2.css("cursor","pointer");
+                },
+                function () {
+                    lmore2.animate({opacity:"1"},600);
+                    lmore2.css("cursor","default");
+                });
+    });
+    $(document).click(function(e) {
+        hide_nav_menu();
+
+    });
+    $(function(){
+        $('a[href*=#],area[href*=#]').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var $target = $(this.hash);
                 $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
@@ -230,23 +182,29 @@
         });
     });
 
-    $(function () {
-
-        var lmore2 = $("#show_more");
-
-        lmore2.hover(
-                function () {
-                    lmore2.animate({opacity: "0"}, 600);
-                    lmore2.css("cursor", "pointer");
-                },
-                function () {
-                    lmore2.animate({opacity: "1"}, 600);
-                    lmore2.css("cursor", "default");
-                });
-    });
-
 </script>
+<script src="plug/layer/layer.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?48fa18aaae17c85a8b9eacdd0a51498a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script type="text/javascript" src="http://s.union.360.cn/5024.js"></script>
+<link rel="stylesheet" href="fonts/YouYuan/YouYuan.css"/>
+<meta name="360-site-verification" content="f742f622196c51c931eed2afc21e7493"/>
+<meta name="sogou_site_verification" content="ZtNfr6im87"/>
 
-<script src="//cdn.bootcss.com/reveal.js/3.2.0/js/reveal.min.js"></script>
 </body>
 </html>

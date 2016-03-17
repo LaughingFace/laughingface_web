@@ -92,9 +92,10 @@
             loc = "#cto";
         }
 
-        layer.tips(weixin, loc,{
-            time:5000,
-            tips:4
+        tipsid = layer.tips(weixin, loc,{
+            time:4000,
+            tips:[4, 'rgba(0,0,0,0.8)'],
+
         });
         return false;
     };
