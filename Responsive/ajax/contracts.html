@@ -1,0 +1,16 @@
+<div  class="row nav-title">
+    <img id="dy_contracts_1" src="images/contract_show.png">
+</div>
+<div class="row">
+    <div id="dy_contracts_4" class="col-md-6">
+        <img style="width:100%" alt="笑脸科技联系方式" class="img-responsive" id="dy_contracts_3" src="images/contract_person.jpg">
+    </div>
+    <div class="col-md-6 ">
+        <iframe id="dy_contracts_2" frameborder="0" scrolling="no" src="location.html" style="width: 100%;"></iframe>
+    </div>
+</div>
+<script>
+    $("#dy_contracts_3").load(function(){
+        $("#dy_contracts_2").css("height",$("#dy_contracts_3").css("height"));
+    })
+</script>

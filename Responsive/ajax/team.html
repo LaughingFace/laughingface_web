@@ -1,0 +1,148 @@
+
+<div class="row about-us">
+    <h3>管理团队</h3>
+</div>
+<div class="row">
+    <div class="col-md-4 person-info">
+        <a href="../images/p1.jpg" id="ceo-img" onclick="showweixin(1);return false" style="display:block;background: url('../images/p1.jpg') 0px 0px no-repeat;"></a>
+
+        <div class="about-grid-john center-block">
+            <div class="john">
+                <h4>叶爽</h4>
+                <p>CEO</p>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <!-- <li><a href class="facebook"> </a></li> -->
+                    <li><a href="javascript:;" onclick="showweixin(1);return false" class="weixin" id="ceo"> </a></li>
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <p class="para">负责公司产品设计及产品规划，兼产品经理</p>
+
+            <div class="hello">
+                <a href="#"><img src="../images/guanzhu.png"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4 person-info">
+        <a href="'../images/p2.jpg'" id="ooo-img" onclick="showweixin(2);return false" style="display:block;background: url('../images/p2.jpg') 0px 0px no-repeat;"></a>
+        <div class="about-grid-john center-block">
+            <div class="john">
+                <h4>陈建兵</h4>
+
+                <p>项目经理</p>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <!-- <li><a href class="facebook"> </a></li> -->
+                    <li><a class="weixin" id="ooo" href="javascript:;" onclick="showweixin(2)"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <p class="para">负责产品结构设计，及生产跟踪.&nbsp;</p>
+
+            <div class="hello">
+                <a href="#"><img src="images/guanzhu.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 person-info">
+        <a href="../images/p3.jpg" id="cto-img" onclick="showweixin(3);return false" style="display:block;background: url('../images/p3.jpg') 0px 0px no-repeat;"></a>
+        <div class="about-grid-john center-block">
+            <div class="john">
+                <h4>邱文海</h4>
+
+                <p>项目总监</p>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <!-- <li><a href class="facebook"> </a></li> -->
+                    <li><a href="javascript:;" onclick="showweixin(3);return false" class="weixin" id="cto"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <p id='cp-btn' class="para">负责产品开发总体规划.<br>&nbsp;</p>
+
+            <div class="hello">
+                <a href="#"><img src="images/guanzhu.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showweixin(p){
+        var weixin = "<a >aaaaa</a>";
+        var loc = "";
+        if (p == 1)
+        {
+            weixin = "shaojiang7684";
+            loc = "#ceo";
+        }
+        else if(p == 2)
+        {
+            weixin = "tianmu200";
+            loc = "#ooo";
+        }
+        else if (p == 3)
+        {
+            weixin = "Wendy885595";
+            loc = "#cto";
+        }
+
+        layer.tips(weixin, loc,{
+            time:5000,
+            tips:4
+        });
+        return false;
+    };
+
+
+    $("#ceo").hover(function(){
+        $("#ceo-img").css({
+            background: "url(images/p1.jpg) no-repeat 0px -200px",
+            display: "block"})
+
+
+    },function(){
+        $("#ceo-img").css({
+            background: "url(images/p1.jpg) no-repeat 0px 0px",
+        })
+    });
+    $("#ceo-img").css({
+        background: "url(images/p1.jpg) no-repeat 0px 0px",
+    })
+    // --------------------------------------------------
+
+    $("#ooo").hover(function(){
+        $("#ooo-img").css({
+            background: "url(images/p2.jpg) no-repeat 0px -200px",
+            display: "block"})
+
+    },function(){
+        $("#ooo-img").css({
+            background: "url(images/p2.jpg) no-repeat 0px 0px",
+        })
+    });
+    // --------------------------------------------------
+    $("#ooo-img").css({
+        background: "url(images/p2.jpg) no-repeat 0px 0px",
+    });
+    $("#cto").hover(function(){
+        $("#cto-img").css({
+            background: "url(images/p3.jpg) no-repeat 0px -200px",
+            display: "block"})
+
+    },function(){
+        $("#cto-img").css({
+            background: "url(images/p3.jpg) no-repeat 0px 0px",
+        })
+    });
+    $("#cto-img").css({
+        background: "url(images/p3.jpg) no-repeat 0px 0px",
+    });
+</script>
+
+

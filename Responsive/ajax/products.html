@@ -1,0 +1,53 @@
+<div class="row">
+    <p class="welcome_text" >"欢迎来到笑脸科技,<br>用想象力生活."</p>
+</div>
+<div  class="row nav-title">
+    <img id="products_img1" src="images/products_show.png">
+</div>
+<div class="row">
+    <img onclick="amplifyShow()" class="img-responsive" id="products_img2" src="images/product1.jpg">
+</div>
+
+
+
+<script>
+    function amplifyShow() {
+
+        viewwidth = $(window).width();
+        viewheight = $(window).height();
+        imgwidth = viewwidth * 0.9;
+        imgheight = imgwidth * 674 / 1500;
+        if (imgheight > viewheight) {
+            imgheight = viewheight * 0.9;
+            imgwidth = imgheight * 1500 / 674;
+        }
+        if (viewwidth > viewheight) {
+
+            showimg = "<img onclick='layer.close(aaa)' style='width:100%'  src='images/product1.jpg'/> "
+        }
+        else {
+            showimg = "<img onclick='layer.close(aaa)'  style='width:100%' src='images/product1_hor.jpg'/> "
+
+
+            imgwidth = viewwidth;
+            imgheight = imgwidth * 1500 / 674;
+            if (imgheight > viewheight) {
+                imgheight = viewheight;
+                imgwidth = imgheight * 674 / 1500;
+            }
+
+        }
+        imgarea = [imgwidth + 'px', imgheight + "px"];
+        aaa = layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: imgarea,
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: showimg
+        });
+
+    }
+
+</script>

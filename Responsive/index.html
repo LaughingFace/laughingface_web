@@ -30,8 +30,8 @@
 <body>
 
 
-<div class="container">
-    <nav class="navbar " role="navigation">
+<div  class="container">
+    <nav id="top" class="navbar " role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#nav-menu">
@@ -54,9 +54,10 @@
         </div>
     </nav>
 </div>
+<!-- home   -->
 <div id="home" class="container-fluid " style="background: url('images/home_bg.jpg') 0px -165px no-repeat;">
     <div class="row img-logo">
-    <img class="center-block img-responsive img-logo"alt="笑脸科技logo" class="logo" src="images/logoy.png">
+        <img class="center-block img-responsive img-logo"alt="笑脸科技logo" class="logo" src="images/logoy.png">
 
     </div>
     <div class="row">
@@ -76,6 +77,7 @@
     </div>
     <div style="width:100%;height:100px"></div>
 </div>
+<!--pc nav-->
 <div class="container center-text visible-lg-block visible-md-block" style="margin-top:50px;">
     <div class="row">
         <div class="col-md-4 ">
@@ -91,16 +93,10 @@
 </div>
 
 
+<div id="products" class="container">
+
+</div>
 <div class="container">
-    <div class="row">
-        <p class="welcome_text" >"欢迎来到笑脸科技,<br>用想象力生活."</p>
-    </div>
-    <div id="products" class="row nav-title">
-        <img id="products_img1" src="images/products_show.png">
-    </div>
-    <div class="row">
-        <img class="img-responsive" id="products_img2" src="images/product1.jpg">
-    </div>
     <div id="about" class="row nav-title">
         <img id="dy_about_1" src="images/tuanduijieshao.png">
     </div>
@@ -115,90 +111,11 @@
 
     </div>
 </div>
-<div class="container">
-    <div class="row about-us">
-        <h3>管理团队</h3>
-    </div>
-    <div class="row">
-        <div class="col-md-4 person-info">
-            <a id="ceo-img" style="display:block;background: url('images/p1.jpg') 0px 0px no-repeat;"></a>
+<div id="team" class="container">
 
-            <div class="about-grid-john center-block">
-                <div class="john">
-                    <h4>叶爽</h4>
-                    <p>CEO</p>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        <!-- <li><a href class="facebook"> </a></li> -->
-                        <li><a href="javascript:;" onclick="js_method()" class="weixin" id="ceo"> </a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-                <p class="para">负责公司产品设计及产品规划，兼产品经理</p>
+</div>
+<div id="contracts" class="container">
 
-                <div class="hello">
-                    <a href="#"><img src="images/guanzhu.png"></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-4 person-info">
-            <a id="ooo-img" style="display:block;background: url('images/p2.jpg') 0px 0px no-repeat;"></a>
-            <div class="about-grid-john center-block">
-                <div class="john">
-                    <h4>陈建兵</h4>
-
-                    <p>项目经理</p>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        <!-- <li><a href class="facebook"> </a></li> -->
-                        <li><a class="weixin" id="ooo" href="javascript:;" onclick="js_method()"> </a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-                <p class="para">负责产品结构设计，及生产跟踪.&nbsp;</p>
-
-                <div class="hello">
-                    <a href="#"><img src="images/guanzhu.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 person-info">
-            <a id="cto-img" style="display:block;background: url('images/p3.jpg') 0px 0px no-repeat;"></a>
-            <div class="about-grid-john center-block">
-                <div class="john">
-                    <h4>邱文海</h4>
-
-                    <p>项目总监</p>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        <!-- <li><a href class="facebook"> </a></li> -->
-                        <li><a href="javascript:;" onclick="js_method()" class="weixin" id="cto"> </a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-                <p class="para">负责产品开发总体规划.<br>&nbsp;</p>
-
-                <div class="hello">
-                    <a href="#"><img src="images/guanzhu.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contracts" class="row nav-title">
-        <img id="dy_contracts_1" src="images/contract_show.png">
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <img style="width:100%" alt="笑脸科技联系方式" class="img-responsive" id="dy_contracts_3" src="images/contract_person.jpg">
-        </div>
-        <div class="col-md-6 ">
-            <iframe id="dy_contracts_2" frameborder="0" scrolling="no" src="location.html" style="width: 100%;height: 100%;"></iframe>
-        </div>
-    </div>
 </div>
 <div class="copyright">
     <div class="container">
@@ -210,11 +127,26 @@
 </div>
 <a href="#top" id="toTop" style="display: inline;opacity:0"><span id="toTopHover" style="opacity: 1;"></span>To Top</a>
 <script>
-    var img = $("#dy_contracts_3");
-
-    $("#dy_contracts_2").css("height",img.css("height"));
 
 
+    $(window).load(function() {
+
+        //alert(aaa.css("height"));
+        $("#team").load("ajax/team.html");
+        $("#products").load("ajax/products.html");
+        $("#contracts").load("ajax/contracts.html");
+
+    });
+    $(window).scroll(function(){
+        scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+        if (scrollTop>100)
+        {
+            $("#toTop").css("opacity",1);
+        }
+        else {
+            $("#toTop").css("opacity",scrollTop/100);
+        }
+    });
     $(function () {
 
         var lmore2 = $("#show_more");
@@ -249,6 +181,28 @@
         });
     });
 </script>
+<script src="plug/layer/layer.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?48fa18aaae17c85a8b9eacdd0a51498a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script type="text/javascript" src="http://s.union.360.cn/5024.js"></script>
 <link rel="stylesheet" href="fonts/YouYuan/YouYuan.css"/>
+<meta name="360-site-verification" content="f742f622196c51c931eed2afc21e7493"/>
+<meta name="sogou_site_verification" content="ZtNfr6im87"/>
+
 </body>
 </html>

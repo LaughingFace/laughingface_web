@@ -4,6 +4,33 @@ body{
     /*font-family: RTWSShangGoG0v1-ExLight, 'Open Sans', sans-serif;*/
     font-family:YouYuan;
 }
+
+/*-- to-top --*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arrow.png") no-repeat 0px 0px;
+}
+
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
 .img-logo{
     padding:20px;
 }
@@ -168,6 +195,40 @@ p.para {
     line-height: 25px;
     height:auto;
     text-align:center;
+}
+
+#ceo-img{
+    background: url(../images/pixel.gif) no-repeat 0px 0px;
+    display: block;
+    height: 200px;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
+#ooo-img{
+    background: url(../images/pixel.gif) no-repeat 0px 0px;
+    display: block;
+    height: 200px;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
+#cto-img{
+    background: url(../images/pixel.gif) no-repeat 0px 0px;
+    display: block;
+    height: 200px;
+
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
 }
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{height:1%;}
